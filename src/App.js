@@ -10,17 +10,16 @@ function App() {
     const img = new Image();
     img.src = '/adv.webp';
     img.onload = () => {
-      // Simula um pequeno atraso após o carregamento do fundo
       setTimeout(() => {
         setBgLoaded(true);
-      }, 1000); // 1000ms = 1 segundo de atraso
+      }, 1000); 
     };
   }, []);
 
   return (
     <div className={`App ${bgLoaded ? '' : 'hidden'}`}>
       <header className="App-header">
-        <div className="flex items-start justify-center bg-cover bg-center" style={{ backgroundImage: "url('/adv.webp')" }}>
+        <div className="flex items-start justify-center bg-cover bg-center" style={{ backgroundImage: "url('/bg2.jpg')" }}>
           {!bgLoaded && (
             <div className="loader">Loading...</div>
           )}
@@ -42,7 +41,7 @@ function App() {
                   className='w-80 cursor-pointer' 
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2, delay: 1 }} // Inicia após 1 segundo
+                  transition={{ duration: 2, delay: 1 }} 
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 />
@@ -52,7 +51,7 @@ function App() {
                   className='w-80 cursor-pointer' 
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2, delay: 1 }} // Inicia após 1 segundo
+                  transition={{ duration: 2, delay: 1 }} 
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 />
@@ -62,7 +61,7 @@ function App() {
                   className='w-80 cursor-pointer' 
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2, delay: 1 }} // Inicia após 1 segundo
+                  transition={{ duration: 2, delay: 1 }} 
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 />
@@ -72,7 +71,7 @@ function App() {
                   className='w-80 cursor-pointer' 
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 2, delay: 1 }} // Inicia após 1 segundo
+                  transition={{ duration: 2, delay: 1 }} 
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 />
