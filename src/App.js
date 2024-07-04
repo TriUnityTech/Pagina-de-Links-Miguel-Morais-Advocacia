@@ -46,7 +46,7 @@ function App() {
                   whileTap={{ scale: 0.9 }}
                 />
                 <motion.img 
-                  src='/link3.webp'
+                  src='/link2.webp'
                   alt="Link 2" 
                   className='w-80 cursor-pointer' 
                   initial={{ x: -100, opacity: 0 }}
